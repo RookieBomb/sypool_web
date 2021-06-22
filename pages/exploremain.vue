@@ -12,7 +12,7 @@
       >
         <source type="video/mp4" src="https://sypool.io/wp-content/uploads/2021/06/1036290746-sd.mov">
       </video>
-      <div class="title_box">
+      <div class="title_box wow animate__fadeInUp">
         <span class="page_title">Explore Sypool</span>
         <div class="brief">
           Sypool is the dApp for SYP holders. If you want to know more, follow us on Medium, Twitter, or Telegram.
@@ -27,7 +27,7 @@
         <img src="../assets/img/line.png" class="line_img mb50" alt="">
       </div>
       <div class="text_center">
-        <img src="../assets/img/chart4-2-1280x856.png" style="width:885px" alt="">
+        <img src="../assets/img/chart4-2-1280x856.png" class=" wow animate__fadeIn" style="width:885px" alt="">
       </div>
     </section>
     <div style="height:100px" />
@@ -39,7 +39,7 @@
         <img src="../assets/img/line.png" class="line_img mb50" alt="">
       </div>
       <div class="text_center">
-        <img src="../assets/img/activity2-1.png" style="width:840px;cursor:pointer;" alt="" @click="gotoSypool">
+        <img src="../assets/img/activity2-1.png" style="width:840px;cursor:pointer;" class=" wow animate__fadeIn" alt="" @click="gotoSypool">
       </div>
     </section>
     <div style="height:200px" />
@@ -47,7 +47,18 @@
 </template>
 
 <script>
+if (process.browser) { // 在这里根据环境引入wow.js
+  // eslint-disable-next-line no-var
+  var { WOW } = require('wowjs')
+}
 export default {
+  mounted () {
+    this.$nextTick(() => {
+      if (process.browser) {
+        new WOW({ animateClass: 'animate__animated' }).init()
+      }
+    })
+  },
   methods: {
     gotoSypool () {
       this.$router.push('/sypool')

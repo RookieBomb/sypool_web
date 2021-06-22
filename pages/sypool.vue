@@ -8,7 +8,7 @@
         <img src="../assets/img/line.png" class="line_img mb50" alt="">
       </div>
       <div class="text_center">
-        <img src="../assets/img/test2.png" style="width:885px" alt="">
+        <img src="../assets/img/test2.png" class=" wow animate__fadeIn" style="width:885px" alt="">
       </div>
 
       <div class="text_center">
@@ -27,7 +27,7 @@
         Show the ingredients of every pool.
       </div>
       <div class="text_center">
-        <img src="../assets/img/port-1.png" style="width:885px" alt="">
+        <img src="../assets/img/port-1.png" style="width:885px" class=" wow animate__fadeIn" alt="">
       </div>
     </section>
     <div style="height:100px" />
@@ -42,7 +42,7 @@
         Record every transaction on chain.
       </div>
       <div class="text_center">
-        <img src="../assets/img/activity2-1 (1).png" style="width:840px" alt="">
+        <img src="../assets/img/activity2-1 (1).png" style="width:840px" class=" wow animate__fadeIn" alt="">
       </div>
     </section>
     <div style="height:200px" />
@@ -53,8 +53,19 @@
 
 <script>
 import TabDialog from '@/components/Dialog/dialog.vue'
+if (process.browser) { // 在这里根据环境引入wow.js
+  // eslint-disable-next-line no-var
+  var { WOW } = require('wowjs')
+}
 export default {
   components: { TabDialog },
+  mounted () {
+    this.$nextTick(() => {
+      if (process.browser) {
+        new WOW({ animateClass: 'animate__animated' }).init()
+      }
+    })
+  },
   methods: {
     openDialog () {
       this.$refs.tabDialog.dialogVisible = true

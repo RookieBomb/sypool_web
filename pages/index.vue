@@ -13,11 +13,11 @@
         <source type="video/mp4" src="https://sypool.io/wp-content/uploads/2021/06/1036290746-sd.mov">
       </video>
       <div class="title_box">
-        <span class="page_title">SYPOOL</span>
-        <div class="brief">
+        <span class="page_title wow animate__bounce">SYPOOL</span>
+        <div class="brief  wow animate__bounce">
           Synthetic Asset Pools Management
         </div>
-        <NuxtLink to="/exploremain" class="btn">
+        <NuxtLink to="/exploremain" class="btn  wow animate__bounce">
           ENTER APP
         </NuxtLink>
       </div>
@@ -26,21 +26,21 @@
       <strong class="section_title">FEATURES</strong>
       <el-row :gutter="60">
         <el-col :lg="8" :span="24">
-          <div class="block mb20px">
+          <div class="block mb20px  wow animate__pulse">
             <img src="../assets/img/Crypto_Icon_13.png" alt="">
             <p>INNOVATION</p>
             <span>Sypool is a synthetic asset management protocol, which enables you to build, manage and trade your portfolio tokens easily.</span>
           </div>
         </el-col>
         <el-col :lg="8" :span="24">
-          <div class="block mb20px">
+          <div class="block mb20px  wow animate__pulse">
             <img src="../assets/img/Crypto_Icon_15.png" alt="">
             <p>INSPIRATION</p>
             <span>In this crypto world, two things always inspire us: the imagination and the perspective. Imagination is the will; perspective is the way.</span>
           </div>
         </el-col>
         <el-col :lg="8" :span="24">
-          <div class="block mb20px">
+          <div class="block mb20px  wow animate__pulse">
             <img src="../assets/img/Crypto_Icon_14.png" alt="">
             <p>TOKENIZATION</p>
             <span>The idea is constantly the same: tokenization. And tokenized pool shares could represent ownership of certain amount of assets.</span>
@@ -49,21 +49,21 @@
       </el-row>
 
       <div class="btn_box">
-        <NuxtLink to="/" class="btn2">
+        <a class="btn2" @click="gotoLearnMore">
           Learn More
-        </NuxtLink>
+        </a>
       </div>
     </section>
 
     <section class="thired_section mlr400 mt150">
-      <strong class="section_title">“Bi- token” System</strong>
+      <strong id="learnMore" class="section_title">“Bi- token” System</strong>
       <div class="sub_brief">
         Governance Token (SYP) + Each Pool’s Share Token (SAP)
       </div>
       <el-row :gutter="20">
         <el-col :lg="8" :span="24">
           <div class="block">
-            <img src="../assets/img/line.png" class="line_img" alt="">
+            <img src="../assets/img/line.png" class="line_img " alt="">
             <p>
               SYP—As the governance token, SYP provides every participant with proper rewards.
             </p>
@@ -71,7 +71,7 @@
         </el-col>
         <el-col :lg="8" :span="24">
           <div class="block">
-            <img src="../assets/img/sap1-1.png" style="width:85%" alt="">
+            <img src="../assets/img/sap1-1.png" class="  wow animate__fadeInUp" style="width:85%" alt="">
           </div>
         </el-col>
         <el-col :lg="8" :span="24">
@@ -96,12 +96,12 @@
       <el-row :gutter="120">
         <el-col :lg="12" :span="24">
           <div class="block">
-            <img src="../assets/img/mint4-1.png" class="sap1_2" alt="">
+            <img src="../assets/img/mint4-1.png" class="sap1_2  wow animate__fadeInUp" alt="">
           </div>
         </el-col>
         <el-col :lg="12" :span="24">
           <div class="block">
-            <img src="../assets/img/burn4-1.png" class="sap1_2" alt="">
+            <img src="../assets/img/burn4-1.png" class="sap1_2  wow animate__fadeInUp" alt="">
           </div>
         </el-col>
       </el-row>
@@ -125,7 +125,7 @@
         </el-col>
         <el-col :lg="12" :span="24">
           <div class="block">
-            <img src="../assets/img/Picture13.png" style="width:90%" alt="">
+            <img src="../assets/img/Picture13.png" style="width:90%" class=" wow animate__fadeInUp" alt="">
           </div>
         </el-col>
       </el-row>
@@ -135,19 +135,19 @@
       <el-row :gutter="120">
         <el-col :lg="12" :span="24">
           <div class="block">
-            <img src="../assets/img/Crypto_Illustration_03-1.png" style="width:90%" alt="">
+            <img src="../assets/img/Crypto_Illustration_03-1.png" class=" wow animate__fadeInUp" style="width:90%" alt="">
           </div>
         </el-col>
         <el-col :lg="12" :span="24">
           <div>
             <strong class="base_title mb50 display_block">TYPES OF SAP</strong>
-            <div class="types_list">
+            <div class="types_list  wow animate__fadeInDown">
               <i class="el-icon-check" />
               <div>
                 <p>INDEX-TRACKING</p>
               </div>
             </div>
-            <div class="types_list">
+            <div class="types_list wow animate__fadeInDown">
               <i class="el-icon-check" />
               <div>
                 <p>ASSESTS-BACKED</p>
@@ -155,13 +155,13 @@
                 <p>TRADING</p>
               </div>
             </div>
-            <div class="types_list">
+            <div class="types_list wow animate__fadeInDown">
               <i class="el-icon-check" />
               <div>
                 <p>TRADER-BASED</p>
               </div>
             </div>
-            <div class="types_list">
+            <div class="types_list wow animate__fadeInDown">
               <i class="el-icon-check" />
               <div>
                 <p>STRUCTURED YIELD</p>
@@ -185,23 +185,23 @@
         </el-col>
         <el-col :lg="12" :span="24">
           <div class="usage_list">
-            <div>
+            <div class="wow animate__fadeInRight">
               <i class="el-icon-circle-check" />
               <span>TRADE</span>
             </div>
-            <div>
+            <div class="wow animate__fadeInRight">
               <i class="el-icon-circle-check" />
               <span>STAKING</span>
             </div>
-            <div>
+            <div class="wow animate__fadeInRight">
               <i class="el-icon-circle-check" />
               <span>MINT SAP</span>
             </div>
-            <div>
+            <div class="wow animate__fadeInRight">
               <i class="el-icon-circle-check" />
               <span>VOTE</span>
             </div>
-            <div>
+            <div class="wow animate__fadeInRight">
               <i class="el-icon-circle-check" />
               <span>COMMUNITY DEVELOPMENT</span>
             </div>
@@ -216,9 +216,9 @@
         <img src="../assets/img/line.png" class="line_img" alt="">
       </div>
       <div class="compans_list">
-        <img src="../assets/img/binance_smart_chain.png" alt="">
-        <img src="../assets/img/solana-1.png" alt="">
-        <img src="../assets/img/ethereum.png" alt="">
+        <img src="../assets/img/binance_smart_chain.png" class="wow animate__bounceIn" alt="">
+        <img src="../assets/img/solana-1.png" class="wow animate__bounceIn" alt="">
+        <img src="../assets/img/ethereum.png" class="wow animate__bounceIn" alt="">
       </div>
     </section>
 
@@ -227,7 +227,7 @@
       <div class="text_center mb50">
         <img src="../assets/img/line.png" class="line_img" alt="">
       </div>
-      <img src="../assets/img/mint5-1.png" class="preview_img mb50" alt="">
+      <img src="../assets/img/mint5-1.png" class="preview_img mb50 wow animate__fadeInDown" alt="">
       <div class="mb50">
         <NuxtLink class="btn" to="/exploremain">
           DEMO
@@ -239,10 +239,26 @@
 </template>
 
 <script>
+if (process.browser) { // 在这里根据环境引入wow.js
+  // eslint-disable-next-line no-var
+  var { WOW } = require('wowjs')
+}
 export default {
   data () {
     return {
       typeList: ['INDEX-TRACKING', '']
+    }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      if (process.browser) {
+        new WOW({ animateClass: 'animate__animated' }).init()
+      }
+    })
+  },
+  methods: {
+    gotoLearnMore () {
+      document.getElementById('learnMore').scrollIntoView({ block: 'start', behavior: 'smooth' })
     }
   }
 }
