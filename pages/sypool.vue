@@ -23,7 +23,7 @@
       <div class="mb50">
         <img src="../assets/img/line.png" class="line_img mb50" alt="">
       </div>
-      <div class="mb50">
+      <div class="mb50 fs16">
         Show the ingredients of every pool.
       </div>
       <div class="text_center">
@@ -38,7 +38,7 @@
       <div class="mb50">
         <img src="../assets/img/line.png" class="line_img mb50" alt="">
       </div>
-      <div class="mb50">
+      <div class="mb50 fs16">
         Record every transaction on chain.
       </div>
       <div class="text_center">
@@ -91,5 +91,9 @@ export default {
   margin-top: 50px;
   display: inline-block;
   cursor: pointer;
+}
+
+.fs16 {
+  font-size: 16px;
 }
 </style>
