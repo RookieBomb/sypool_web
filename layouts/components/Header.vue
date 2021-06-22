@@ -5,9 +5,9 @@
       <NuxtLink to="/">
         HOME
       </NuxtLink>
-      <NuxtLink to="/">
+      <a style="cursor: pointer" @click="gotoBottom">
         COMMUNITY
-      </NuxtLink>
+      </a>
       <a style="cursor:pointer;" @click="openWindow">
         LITE PAPER
       </a>
@@ -43,6 +43,9 @@ export default {
   methods: {
     openWindow () {
       window.open('https://sypool.io/wp-content/uploads/2021/06/Sypool-white-paper-1.pdf')
+    },
+    gotoBottom () {
+      document.getElementById('footer').scrollIntoView({ block: 'start', behavior: 'smooth' })
     }
   }
 }
