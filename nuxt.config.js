@@ -15,6 +15,11 @@ export default {
     ]
   },
 
+  server: {
+    port: 9100,
+    host: '127.0.0.1'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'element-ui/lib/theme-chalk/index.css'
