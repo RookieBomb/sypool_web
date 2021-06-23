@@ -64,8 +64,37 @@ export default {
 .copyright {
   color: #666;
   padding-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
 
   margin: 30px 0 10px;
+}
+
+@media (max-width: 980px) {
+  .footer {
+    margin: 20px 200px;
+  }
+  .link_box {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &>div {
+      color: #fff;
+      font-size: 60px;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 30px;
+      &>img {
+        width: 60px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 981px) {
+
 }
 </style>

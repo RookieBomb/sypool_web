@@ -21,6 +21,43 @@
         WALLET
       </a>
     </div>
+    <el-dropdown class="right_menu_small" @command="handleCommand">
+      <span class="el-dropdown-link">
+        <i class="el-icon-menu" />
+      </span>
+      <el-dropdown-menu slot="dropdown" class="my_dropdown">
+        <el-dropdown-item>
+          <a @click="goToLink('/')">
+            HOME
+          </a>
+        </el-dropdown-item>
+        <el-dropdown-item>
+          <a style="cursor: pointer" @click="gotoBottom">
+            COMMUNITY
+          </a>
+        </el-dropdown-item>
+        <el-dropdown-item>
+          <a style="cursor:pointer;" @click="openWindow">
+            LITE PAPER
+          </a>
+        </el-dropdown-item>
+        <el-dropdown-item>
+          <a @click="goToLink('/exploremain')">
+            BETA
+          </a>
+        </el-dropdown-item>
+        <el-dropdown-item>
+          <a @click="goToLink('/investment')">
+            MY INVESTMENT
+          </a>
+        </el-dropdown-item>
+        <el-dropdown-item>
+          <a style="cursor:pointer;" @click="dialogVisible=true">
+            WALLET
+          </a>
+        </el-dropdown-item>
+      </el-dropdown-menu>
+    </el-dropdown>
     <el-dialog
       :visible.sync="dialogVisible"
       :modal="false"
@@ -46,6 +83,12 @@ export default {
     },
     gotoBottom () {
       document.getElementById('footer').scrollIntoView({ block: 'start', behavior: 'smooth' })
+    },
+    goToLink (url) {
+      this.$router.push(url)
+    },
+    handleCommand (key) {
+      console.log(123123, key)
     }
   }
 }
@@ -56,7 +99,7 @@ export default {
   padding:15px 30px;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
 
   position: fixed;
   top: 0;
@@ -66,22 +109,93 @@ export default {
 
   background-color: #000;
 
-  height: 80px;
+  height: 60px;
+
+  box-sizing: border-box;
 }
 
 .logo {
-  height: 100%;
+  height: 50px;
 }
 
 .right_menu {
-  display: flex;
   align-items: center;
   a {
     color: #afafaf;
     font-size: 14px;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 980px) {
+  .header {
+    height: 120px;
+    box-sizing: border-box;
+  }
+  .logo {
+    height: 90px;
+  }
+  .right_menu {
+    display: none;
+  }
+  .right_menu_small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .el-icon-menu {
+      font-size: 80px;
+      color: #4285c4;
+    }
+  }
+}
+
+@media (min-width: 981px) {
+  .header {
+    height: 60px;
+      box-sizing: border-box;
+  }
+  .right_menu {
+    display: flex;
+  }
+  .right_menu_small {
+    display: none;
+  }
+}
+</style>
+
+<style lang="less">
+.my_dropdown {
+  width: 95%;
+  background: rgb(36, 36, 36);
+  border: none;
+  padding: 20px;
+  left: 50% !important;
+  box-sizing: border-box;
+  transform: translate(-50%, 0);
+
+  .el-dropdown-menu__item {
+    box-sizing: border-box;
+
+    &>a {
+      font-size: 20px;
+      color: #afafaf;
+      text-decoration: none;
+      // width: 100%;
+      display: block;
+      padding: 10px;
+    }
+
+    &:hover {
+      background-color:rgb(75, 75, 75);
+      color: #afafaf;
+    }
+  }
+
+  .popper__arrow {
+    display: none;
   }
 }
 </style>

@@ -1,17 +1,17 @@
 <template>
   <div>
-    <div style="height:100px" />
-    <section class="mlr400">
-      <div class="text_center">
-        <img src="../assets/img/myinvestment-1.png" style="width:600px" alt="">
+    <div class="empty_height" />
+    <section class="mlr400 pt100">
+      <div class="align_center">
+        <img src="../assets/img/myinvestment-1.png" style="width:60%" alt="">
       </div>
-      <div class="text_center">
+      <div class="align_center">
         <span class="btn2" @click="openDialog">
           Manage My Investment
         </span>
       </div>
     </section>
-    <div style="height:200px" />
+    <div class="empty_height" />
 
     <TabDialog ref="tabDialog" />
   </div>
@@ -34,4 +34,5 @@ export default {
   margin-top: 50px;
   padding: 15px;
 }
+
 </style>

@@ -14,35 +14,31 @@
       </video>
       <div class="title_box wow animate__fadeInUp">
         <span class="page_title">Explore Sypool</span>
-        <div class="brief">
+        <div class="brief" style="width: 80%;margin: 0 auto;">
           Sypool is the dApp for SYP holders. If you want to know more, follow us on Medium, Twitter, or Telegram.
         </div>
       </div>
     </section>
-    <section class="mlr400">
-      <div class="mb50 mt50">
-        <strong class="base_title">Index</strong>
+    <section class="mlr400 pt100">
+      <div class="mb30">
+        <strong class="fs36 bold mb50">Index</strong>
       </div>
-      <div class="mb50">
-        <img src="../assets/img/line.png" class="line_img mb50" alt="">
-      </div>
+      <img src="../assets/img/line.png" class="line_img mb30" alt="">
       <div class="text_center">
-        <img src="../assets/img/chart4-2-1280x856.png" class=" wow animate__fadeIn" style="width:885px" alt="">
+        <img src="../assets/img/chart4-2-1280x856.png" class="wow animate__fadeIn" style="width:88%" alt="">
       </div>
     </section>
-    <div style="height:100px" />
-    <section class="mlr400">
-      <div class="mb50 mt50">
-        <strong class="base_title">Ranking</strong>
+    <div class="empty_height" />
+    <section class="mlr400 pt100">
+      <div class="mb30">
+        <strong class="fs36 bold mb50">Ranking</strong>
       </div>
-      <div class="mb50">
-        <img src="../assets/img/line.png" class="line_img mb50" alt="">
-      </div>
+      <img src="../assets/img/line.png" class="line_img mb30" alt="">
       <div class="text_center">
-        <img src="../assets/img/activity2-1.png" style="width:840px;cursor:pointer;" class=" wow animate__fadeIn" alt="" @click="gotoSypool">
+        <img src="../assets/img/activity2-1.png" style="width:84%;cursor:pointer;" class=" wow animate__fadeIn" alt="" @click="gotoSypool">
       </div>
     </section>
-    <div style="height:200px" />
+    <div class="empty_height" />
   </div>
 </template>
 
@@ -70,7 +66,6 @@ export default {
 <style lang="less" scoped>
 .first_section {
   width: 100%;
-  height: 510px;
   overflow: hidden;
   position: relative;
 
@@ -94,7 +89,7 @@ export default {
   }
 
   .title_box {
-    margin-top: 150px;
+    padding: 200px 0;
     text-align: center;
 
     z-index: 100;
@@ -109,16 +104,19 @@ export default {
       margin: 25px 15px;
     }
   }
-}
+   @media (max-width: 980px) {
+    .title_box {
 
-.base_title {
-  font-weight: 600;
-  font-size: 36px;
-  letter-spacing: 2px;
+      .page_title {
+        font-size: 132px;
+      }
+    }
+  }
 }
 
 .line_img {
-  width: 109px;
+  width: 20%;
   height: 5px;
 }
+
 </style>

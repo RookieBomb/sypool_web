@@ -27,21 +27,21 @@
       <strong class="fs36 align_center bold mt50 mb50 display_block">FEATURES</strong>
       <el-row :gutter="60">
         <el-col :lg="8" :span="24">
-          <div class="block mb30  wow animate__pulse">
+          <div class="block mb50  wow animate__pulse">
             <img src="../assets/img/Crypto_Icon_13.png" alt="">
             <p>INNOVATION</p>
             <span>Sypool is a synthetic asset management protocol, which enables you to build, manage and trade your portfolio tokens easily.</span>
           </div>
         </el-col>
         <el-col :lg="8" :span="24">
-          <div class="block mb30  wow animate__pulse">
+          <div class="block mb50  wow animate__pulse">
             <img src="../assets/img/Crypto_Icon_15.png" alt="">
             <p>INSPIRATION</p>
             <span>In this crypto world, two things always inspire us: the imagination and the perspective. Imagination is the will; perspective is the way.</span>
           </div>
         </el-col>
         <el-col :lg="8" :span="24">
-          <div class="block mb30  wow animate__pulse">
+          <div class="block mb50  wow animate__pulse">
             <img src="../assets/img/Crypto_Icon_14.png" alt="">
             <p>TOKENIZATION</p>
             <span>The idea is constantly the same: tokenization. And tokenized pool shares could represent ownership of certain amount of assets.</span>
@@ -94,18 +94,20 @@
       <div class="fs16 align_center mb30">
         Use your USDT, BTC, ETH, SOL, SYP…to mint SAP; or burn your SAP to redeem your tokens.
       </div>
-      <el-row :gutter="120">
-        <el-col :lg="12" :span="24">
-          <div class="block">
-            <img src="../assets/img/mint4-1.png" class="wow animate__fadeInUp" alt="">
-          </div>
-        </el-col>
-        <el-col :lg="12" :span="24">
-          <div class="block">
-            <img src="../assets/img/burn4-1.png" class="wow animate__fadeInUp" alt="">
-          </div>
-        </el-col>
-      </el-row>
+      <div style="overflow:hidden;">
+        <el-row :gutter="120">
+          <el-col :lg="12" :span="24">
+            <div class="block">
+              <img src="../assets/img/mint4-1.png" class="wow animate__fadeInUp" alt="">
+            </div>
+          </el-col>
+          <el-col :lg="12" :span="24">
+            <div class="block">
+              <img src="../assets/img/burn4-1.png" class="wow animate__fadeInUp" alt="">
+            </div>
+          </el-col>
+        </el-row>
+      </div>
     </section>
 
     <section class="five_section mlr400 pt100">
@@ -117,7 +119,7 @@
             <p class="fs16 lh15 mb20">
               After mainnet launch, a secondary trading market of SAPi will be established and trading pairs will be created in Dex.
             </p>
-            <p class="fs16 lh15">
+            <p class="fs16 lh15 mb50">
               Users holding LP tokens can get both reward from the exchange through providing liquidity and SYP through farming.
             </p>
           </div>
@@ -130,17 +132,17 @@
       </el-row>
     </section>
 
-    <section class="six_section mlr400 mt150">
+    <section class="six_section mlr400 pt100">
       <el-row :gutter="120">
         <el-col :lg="12" :span="24">
-          <div class="block">
-            <img src="../assets/img/Crypto_Illustration_03-1.png" class=" wow animate__fadeInUp" style="width:90%" alt="">
+          <div>
+            <img src="../assets/img/Crypto_Illustration_03-1.png" class="wow animate__fadeInUp" style="width:90%" alt="">
           </div>
         </el-col>
         <el-col :lg="12" :span="24">
           <div>
-            <strong class="base_title mb50 display_block">TYPES OF SAP</strong>
-            <div class="types_list  wow animate__fadeInDown">
+            <strong class="fs36 mb30 display_block">TYPES OF SAP</strong>
+            <div class="types_list wow animate__fadeInDown">
               <i class="el-icon-check" />
               <div>
                 <p>INDEX-TRACKING</p>
@@ -171,13 +173,13 @@
       </el-row>
     </section>
 
-    <section class="mlr400 mt150">
+    <section class="seven_section mlr400 pt100">
       <el-row :gutter="120">
         <el-col :lg="12" :span="24">
           <div>
-            <strong class="base_title mb50 display_block">TYPES OF SAP</strong>
-            <img src="../assets/img/line.png" class="line_img mb50" alt="">
-            <p class="base_text">
+            <strong class="fs36 mb30 display_block">TYPES OF SAP</strong>
+            <img src="../assets/img/line.png" class="line_img mb30" alt="">
+            <p class="fs16 lh15 mb50">
               Besides traditional uses of governance token, like trading, staking, voting, and developing community, minting SAP is also a core usage of SYP.
             </p>
           </div>
@@ -209,31 +211,39 @@
       </el-row>
     </section>
 
-    <section class="mlr400 mt150">
-      <strong class="section_title">Cross-Chain Interoperability</strong>
-      <div class="text_center mb50">
-        <img src="../assets/img/line.png" class="line_img" alt="">
+    <section class="eight_section mlr400 pt100">
+      <strong class="fs36 mb30 display_block align_center">Cross-Chain Interoperability</strong>
+      <div class="text_center mb30">
+        <img src="../assets/img/line.png" class="line_img" style="width:20%;" alt="">
       </div>
-      <div class="compans_list">
-        <img src="../assets/img/binance_smart_chain.png" class="grays wow animate__bounceIn" alt="">
-        <img src="../assets/img/solana-1.png" class="wow animate__bounceIn" alt="">
-        <img src="../assets/img/ethereum.png" class="grays wow animate__bounceIn" alt="">
+      <div style="overflow:hidden;">
+        <el-row :gutter="120">
+          <el-col :md="8" :span="24">
+            <img src="../assets/img/binance_smart_chain.png" class="grays wow animate__bounceIn" alt="">
+          </el-col>
+          <el-col :md="8" :span="24">
+            <img src="../assets/img/solana-1.png" class="wow animate__bounceIn" alt="">
+          </el-col>
+          <el-col :md="8" :span="24">
+            <img src="../assets/img/ethereum.png" class="grays wow animate__bounceIn" alt="">
+          </el-col>
+        </el-row>
       </div>
     </section>
 
-    <section class="mlr400 mt150 text_center">
-      <strong class="section_title">Preview</strong>
-      <div class="text_center mb50">
-        <img src="../assets/img/line.png" class="line_img" alt="">
+    <section class="nine_section mlr400 pt100 text_center">
+      <strong class="fs36 mb30 display_block align_center">Preview</strong>
+      <div class="text_center mb30">
+        <img src="../assets/img/line.png" class="line_img" style="width:20%" alt="">
       </div>
-      <img src="../assets/img/mint5-1.png" class="preview_img mb50 wow animate__fadeInDown" alt="">
+      <img src="../assets/img/mint5-1.png" style="width: 60%" class="mb50 wow animate__fadeInDown" alt="">
       <div class="mb50">
         <NuxtLink class="btn" to="/exploremain">
           DEMO
         </NuxtLink>
       </div>
     </section>
-    <div style="height:200px" />
+    <div class="empty_height" />
   </div>
 </template>
 
@@ -296,7 +306,7 @@ export default {
     position: relative;
 
     .page_title {
-      font-size: 66px;
+      font-size: 60px;
     }
 
     .brief {
@@ -304,54 +314,27 @@ export default {
       margin: 25px 15px;
     }
   }
-}
 
-.tl {
-  text-align: left;
-}
+ @media (max-width: 980px) {
+    .title_box {
 
-.display_block {
-  display: block;
-}
-
-.base_text {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.base_title {
-  font-weight: 600;
-  font-size: 36px;
-  letter-spacing: 2px;
-}
-
-.section_title {
-    font-weight: 600;
-    font-size: 36px;
-    letter-spacing: 2px;
-    margin: 50px 0;
-    display: block;
-    text-align: center;
-}
-
-.sub_brief {
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.5;
-
-  margin-bottom: 30px;
+      .page_title {
+        font-size: 120px;
+      }
+    }
+  }
 }
 
 .line_img {
   width: 45%;
-  height: 5px;
+  height: 5px !important;
 }
 
 .second_section {
   .block {
     font-size: 16px;
     color: rgba(255,255,255,0.7);
-    line-height: 32px;
+    line-height: 2;
     border:2px solid #4285c4;
     min-height: 417px;
     padding: 45px 16px;
@@ -397,68 +380,63 @@ export default {
   }
 }
 
-.five_section {
+.five_section {}
 
-}
+.six_section {
+  .types_list {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.8;
+    border:2px solid #4285c4;
+    padding: 20px 16px;
+    margin-bottom: 30px;
 
-.types_list {
-  font-size: 16px;
-  color: rgba(255,255,255,0.7);
-  line-height: 1.8;
-  border:2px solid #4285c4;
-  padding: 20px 16px;
-  margin-bottom: 30px;
-
-  .el-icon-check {
-    color: #4285c4;
-    font-size: 30px;
-    margin-right: 10px;
-  }
-
-  display: flex;
-}
-
-.usage_list {
-  font-size: 20px;
-  color: rgba(255,255,255,0.7);
-  border:1px solid #4285c4;
-  padding: 50px;
-  color: #4285c4;
-
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  &>div {
-    display: flex;
-    width: 50%;
-    margin: 20px 0;
-
-    .el-icon-circle-check {
+    .el-icon-check {
+      color: #4285c4;
       font-size: 30px;
       margin-right: 10px;
+    }
+
+    display: flex;
+  }
+}
+
+.seven_section {
+  .usage_list {
+    font-size: 20px;
+    color: rgba(255,255,255,0.7);
+    border:1px solid #4285c4;
+    padding: 50px;
+    color: #4285c4;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &>div {
+      display: flex;
+      width: 50%;
+      margin: 20px 0;
+
+      .el-icon-circle-check {
+        font-size: 30px;
+        margin-right: 10px;
+      }
     }
   }
 }
 
-.compans_list {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-
-  &>img {
-    height: 57px;
+.eight_section {
+  div {
+    img {
+        width: 80%;
+        margin-bottom: 20px;
+      }
   }
-}
-
-.preview_img {
-  width: 480px;
 }
 
 .grays {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-// 测试
-
 </style>

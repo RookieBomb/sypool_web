@@ -1,51 +1,44 @@
 <template>
   <div>
-    <section class="mlr400">
-      <div class="mb50 mt50">
-        <strong class="base_title">Index</strong>
+    <section class="mlr400 pt100">
+      <div class="mb30">
+        <strong class="fs36 bold mb50">Index</strong>
       </div>
-      <div class="mb50">
-        <img src="../assets/img/line.png" class="line_img mb50" alt="">
+      <img src="../assets/img/line.png" class="line_img mb30" alt="">
+      <div class="align_center">
+        <img src="../assets/img/test2.png" class="wow animate__fadeIn" style="width:88%" alt="">
       </div>
-      <div class="text_center">
-        <img src="../assets/img/test2.png" class=" wow animate__fadeIn" style="width:885px" alt="">
-      </div>
-
-      <div class="text_center">
+      <div class="align_center">
         <span class="btn2" @click="openDialog">Mint SAP</span>
       </div>
     </section>
-    <div style="height:100px" />
-    <section class="mlr400">
-      <div class="mb50 mt50">
-        <strong class="base_title">Portfolio</strong>
+    <div class="empty_height" />
+    <section class="mlr400 pt100">
+      <div class="mb30">
+        <strong class="fs36 bold mb50">Portfolio</strong>
       </div>
-      <div class="mb50">
-        <img src="../assets/img/line.png" class="line_img mb50" alt="">
-      </div>
-      <div class="mb50 fs16">
+      <img src="../assets/img/line.png" class="line_img mb30" alt="">
+      <div class="mb30 fs16">
         Show the ingredients of every pool.
       </div>
-      <div class="text_center">
-        <img src="../assets/img/port-1.png" style="width:885px" class=" wow animate__fadeIn" alt="">
+      <div class="align_center">
+        <img src="../assets/img/port-1.png" style="width:88%" class="wow animate__fadeIn" alt="">
       </div>
     </section>
-    <div style="height:100px" />
-    <section class="mlr400">
-      <div class="mb50 mt50">
-        <strong class="base_title">Ranking</strong>
+    <div class="empty_height" />
+    <section class="mlr400 pt100">
+      <div class="mb30">
+        <strong class="fs36 bold mb50">Ranking</strong>
       </div>
-      <div class="mb50">
-        <img src="../assets/img/line.png" class="line_img mb50" alt="">
-      </div>
-      <div class="mb50 fs16">
+      <img src="../assets/img/line.png" class="line_img mb30" alt="">
+      <div class="mb30 fs16">
         Record every transaction on chain.
       </div>
-      <div class="text_center">
-        <img src="../assets/img/activity2-1 (1).png" style="width:840px" class=" wow animate__fadeIn" alt="">
+      <div class="align_center">
+        <img src="../assets/img/activity2-1 (1).png" style="width:84%" class=" wow animate__fadeIn" alt="">
       </div>
     </section>
-    <div style="height:200px" />
+    <div class="empty_height" />
 
     <TabDialog ref="tabDialog" />
   </div>
@@ -75,14 +68,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.base_title {
-  font-weight: 600;
-  font-size: 36px;
-  letter-spacing: 2px;
-}
-
 .line_img {
-  width: 109px;
+  width: 20%;
   height: 5px;
 }
 
@@ -91,9 +78,5 @@ export default {
   margin-top: 50px;
   display: inline-block;
   cursor: pointer;
-}
-
-.fs16 {
-  font-size: 16px;
 }
 </style>

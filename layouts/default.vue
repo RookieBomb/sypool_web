@@ -16,14 +16,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.main {
-  margin-top: 80px;
-}
-</style>
-
 <style>
-html {
+/* html {
   font-family:
     'Source Sans Pro',
     -apple-system,
@@ -44,6 +38,8 @@ html {
   color: #fff;
 }
 
+*/
+
 *,
 *::before,
 *::after {
@@ -51,13 +47,33 @@ html {
   margin: 0;
 }
 
-body {
-  background-color: #000;
+@media (max-width: 980px) {
+  .main {
+    margin-top: 120px;
+  }
+  .mlr400 {
+  margin-left: 200px;
+  margin-right: 200px;
+}
 }
 
-.mlr400 {
+@media (min-width: 981px) {
+  .main {
+    margin-top: 60px;
+  }
+  .mlr400 {
   margin-left: 400px;
   margin-right: 400px;
+}
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.empty_height {
+  height: 100px;
 }
 
 .plr400 {
@@ -172,6 +188,22 @@ body {
 
     &.is-active {
       color: #0C71C3;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .my_tabs {
+    .el-tabs__item{
+      color: #fff;
+      padding: 12px;
+      &:hover {
+        color: #0C71C3;
+      }
+
+      &.is-active {
+        color: #0C71C3;
+      }
     }
   }
 }
@@ -896,5 +928,21 @@ body {
 
 .ai_start {
   align-items: start;
+}
+</style>
+
+<style>
+ @media (max-width: 980px) {
+  .fs36 {
+    font-size: 72px;
+  }
+
+  .fs14 {
+    font-size: 28px;
+  }
+
+  .fs16 {
+    font-size: 32px;
+  }
 }
 </style>

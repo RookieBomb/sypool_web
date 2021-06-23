@@ -66,13 +66,11 @@ export default {
     postcss: {
       plugins: [
         require('postcss-pxtorem')({
-          rootValue: 190,
-          minPixelValue: 90,
+          rootValue: 192,
+          minPixelValue: 14,
           propList: ['*']
         }),
-        require('autoprefixer')({
-          browsers: ['Android >= 4.0', 'iOS >= 7']
-        })
+        require('autoprefixer')()
       ]
     }
   }

@@ -2,7 +2,7 @@
   <div>
     <el-dialog
       :visible.sync="dialogVisible"
-      width="25%"
+      :width="width"
       class="tab_dialog"
     >
       <i class="el-icon-close" @click="dialogVisible = false" />
@@ -64,7 +64,21 @@ export default {
       btnText: 'MINT NOW',
       flagText: 'SAP',
       text3: true,
-      text4: 'Sypool Quant'
+      text4: 'Sypool Quant',
+      width: '30%'
+    }
+  },
+  mounted () {
+    if (process.browser) {
+      const autoRootFontSize = () => {
+        if (document.documentElement.getBoundingClientRect().width <= 980) {
+          this.width = '90%'
+        } else {
+          this.width = '30%'
+        }
+      }
+      window.addEventListener('resize', autoRootFontSize)
+      autoRootFontSize()
     }
   },
   methods: {
@@ -250,5 +264,142 @@ export default {
 
 .content {
   padding: 50px 0;
+}
+
+@media (max-width: 980px) {
+  .content {
+    width: 60%;
+    margin: 0 auto;
+    color: #fff;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .left_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 40px;
+        width: 25%;
+        &>img {
+          width: 160px;
+          height: 160px;
+
+          margin-bottom: 10px;
+        }
+
+        &>span {
+          font-size: 36px;
+          font-weight: 500;
+        }
+      }
+
+      .right_box {
+        flex: 1;
+
+        font-size: 14px;
+        line-height: 1.5;
+        word-wrap: break-word;
+        word-break: normal;
+      }
+    }
+
+    .syp_block {
+      border: 2px solid #0C71C3;
+      border-radius: 100px;
+      font-size: 28px;
+      padding: 3px 0;
+      color: #0C71C3;
+
+      margin: 40px 0;
+
+      text-align: center;
+    }
+
+    .input_box {
+      text-align: left;
+      &>p {
+        font-size: 28px;
+      }
+
+      .result_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .input_wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 160px;
+        border: 1px solid #0C71C3;
+        border-radius: 20px;
+
+        position: relative;
+
+        margin: 30px  0;
+
+        .flag {
+          width: 140px;
+          height: 160px;
+          line-height: 160px;
+          border-right: 1px solid #0C71C3;
+          text-align: center;
+        }
+
+        .input {
+          flex: 1;
+          height: 80px;
+          line-height: 80px;
+          background: transparent;
+          padding: 10px;
+          border: none;
+          color: #fff;
+
+          &:focus-visible {
+            outline: none;
+          }
+        }
+
+        .max_btn {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translate(0%, -50%);
+          padding: 5px 10px;
+          border-radius: 5px;
+          background-color: #0C71C3;
+          color: #fff;
+          font-size: 14px;
+          line-height: 1;
+        }
+      }
+    }
+
+    .btn_box {
+      text-align: center;
+      margin: 60px 0;
+      .btn_dialog {
+        font-size: 28px;
+        background-color: #0C71C3;
+        letter-spacing: 2px;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+
+        margin: 0 auto;
+
+        cursor: pointer;
+      }
+    }
+
+  }
 }
 </style>
