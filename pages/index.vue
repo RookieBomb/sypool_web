@@ -17,30 +17,31 @@
         <div class="brief  wow animate__bounce">
           Synthetic Asset Pools Management
         </div>
-        <NuxtLink to="/exploremain" class="btn  wow animate__bounce">
+        <NuxtLink to="/exploremain" class="btn wow animate__bounce">
           ENTER APP
         </NuxtLink>
       </div>
     </section>
+
     <section class="second_section mlr400">
-      <strong class="section_title">FEATURES</strong>
+      <strong class="fs36 align_center bold mt50 mb50 display_block">FEATURES</strong>
       <el-row :gutter="60">
         <el-col :lg="8" :span="24">
-          <div class="block mb20px  wow animate__pulse">
+          <div class="block mb30  wow animate__pulse">
             <img src="../assets/img/Crypto_Icon_13.png" alt="">
             <p>INNOVATION</p>
             <span>Sypool is a synthetic asset management protocol, which enables you to build, manage and trade your portfolio tokens easily.</span>
           </div>
         </el-col>
         <el-col :lg="8" :span="24">
-          <div class="block mb20px  wow animate__pulse">
+          <div class="block mb30  wow animate__pulse">
             <img src="../assets/img/Crypto_Icon_15.png" alt="">
             <p>INSPIRATION</p>
             <span>In this crypto world, two things always inspire us: the imagination and the perspective. Imagination is the will; perspective is the way.</span>
           </div>
         </el-col>
         <el-col :lg="8" :span="24">
-          <div class="block mb20px  wow animate__pulse">
+          <div class="block mb30  wow animate__pulse">
             <img src="../assets/img/Crypto_Icon_14.png" alt="">
             <p>TOKENIZATION</p>
             <span>The idea is constantly the same: tokenization. And tokenized pool shares could represent ownership of certain amount of assets.</span>
@@ -48,35 +49,35 @@
         </el-col>
       </el-row>
 
-      <div class="btn_box">
+      <div class="align_center">
         <a class="btn2" @click="gotoLearnMore">
           Learn More
         </a>
       </div>
     </section>
 
-    <section class="thired_section mlr400 mt150">
-      <strong id="learnMore" class="section_title">“Bi- token” System</strong>
-      <div class="sub_brief">
+    <section class="three_section mlr400 pt100">
+      <strong id="learnMore" class="fs36 align_center bold mb50 display_block">“Bi- token” System</strong>
+      <div class="fs16 align_center mb30">
         Governance Token (SYP) + Each Pool’s Share Token (SAP)
       </div>
       <el-row :gutter="20">
         <el-col :lg="8" :span="24">
-          <div class="block">
-            <img src="../assets/img/line.png" class="line_img " alt="">
+          <div class="block mb30">
+            <img src="../assets/img/line.png" class="line_img mb30" alt="">
             <p>
               SYP—As the governance token, SYP provides every participant with proper rewards.
             </p>
           </div>
         </el-col>
         <el-col :lg="8" :span="24">
-          <div class="block">
-            <img src="../assets/img/sap1-1.png" class="  wow animate__fadeInUp" style="width:85%" alt="">
+          <div class="block mb30">
+            <img src="../assets/img/sap1-1.png" class="wow animate__fadeInUp" style="width:85%" alt="">
           </div>
         </el-col>
         <el-col :lg="8" :span="24">
-          <div class="block">
-            <img src="../assets/img/line.png" class="line_img" alt="">
+          <div class="block mb30">
+            <img src="../assets/img/line.png" class="line_img mb30" alt="">
             <p>
               SAP—it represents certain shares of the pool. Minting, burning, trading, farming, or anything the rules permit.
             </p>
@@ -85,53 +86,51 @@
       </el-row>
     </section>
 
-    <section class="fourth_section mlr400 mt150">
-      <strong class="section_title">Mint & Burn SAP</strong>
-      <div class="text_center mb50">
-        <img src="../assets/img/line.png" class="line_img" alt="">
+    <section class="four_section mlr400 pt100">
+      <strong class="fs36 align_center bold mb50 display_block">Mint & Burn SAP</strong>
+      <div class="align_center mb30">
+        <img src="../assets/img/line.png" class="line_img" style="width:25%" alt="">
       </div>
-      <div class="sub_brief">
+      <div class="fs16 align_center mb30">
         Use your USDT, BTC, ETH, SOL, SYP…to mint SAP; or burn your SAP to redeem your tokens.
       </div>
       <el-row :gutter="120">
         <el-col :lg="12" :span="24">
           <div class="block">
-            <img src="../assets/img/mint4-1.png" class="sap1_2  wow animate__fadeInUp" alt="">
+            <img src="../assets/img/mint4-1.png" class="wow animate__fadeInUp" alt="">
           </div>
         </el-col>
         <el-col :lg="12" :span="24">
           <div class="block">
-            <img src="../assets/img/burn4-1.png" class="sap1_2  wow animate__fadeInUp" alt="">
+            <img src="../assets/img/burn4-1.png" class="wow animate__fadeInUp" alt="">
           </div>
         </el-col>
       </el-row>
     </section>
 
-    <section class="mlr400 mt150">
+    <section class="five_section mlr400 pt100">
       <el-row :gutter="120">
         <el-col :lg="12" :span="24">
-          <div class="righ_align">
-            <strong class="base_title mb50 display_block">Secondary Market</strong>
-            <div class="mb50">
-              <img src="../assets/img/line.png" class="line_img" alt="">
-            </div>
-            <p class="base_text" style="padding-bottom: 20px">
+          <div class="align_right">
+            <strong class="fs36 mb30 display_block">Secondary Market</strong>
+            <img src="../assets/img/line.png" class="line_img mb20" alt="">
+            <p class="fs16 lh15 mb20">
               After mainnet launch, a secondary trading market of SAPi will be established and trading pairs will be created in Dex.
             </p>
-            <p class="base_text">
+            <p class="fs16 lh15">
               Users holding LP tokens can get both reward from the exchange through providing liquidity and SYP through farming.
             </p>
           </div>
         </el-col>
         <el-col :lg="12" :span="24">
           <div class="block">
-            <img src="../assets/img/Picture13.png" style="width:90%" class=" wow animate__fadeInUp" alt="">
+            <img src="../assets/img/Picture13.png" style="width:90%" class="wow animate__fadeInUp" alt="">
           </div>
         </el-col>
       </el-row>
     </section>
 
-    <section class="mlr400 mt150">
+    <section class="six_section mlr400 mt150">
       <el-row :gutter="120">
         <el-col :lg="12" :span="24">
           <div class="block">
@@ -267,7 +266,6 @@ export default {
 <style lang="less">
 .first_section {
   width: 100%;
-  height: 650px;
   overflow: hidden;
   position: relative;
 
@@ -291,7 +289,7 @@ export default {
   }
 
   .title_box {
-    margin-top: 200px;
+    padding: 200px 0;
     text-align: center;
 
     z-index: 100;
@@ -345,7 +343,7 @@ export default {
 }
 
 .line_img {
-  width: 109px;
+  width: 45%;
   height: 5px;
 }
 
@@ -361,7 +359,7 @@ export default {
     text-align: center;
 
     &>img{
-      height: 129px;
+      height: 30%;
     }
 
     &>p {
@@ -371,6 +369,7 @@ export default {
       letter-spacing: 2px;
 
       margin: 10px 0;
+      color: #fff;
     }
   }
 
@@ -380,37 +379,26 @@ export default {
   }
 }
 
-.thired_section {
+.three_section {
   .block {
-    padding-top: 20px;
-
-    .line_img {
-      width: 109px;
-      height: 5px;
-
-      margin-bottom: 40px;
-    }
-
     &>p {
       font-size: 16px;
       line-height: 1.5;
     }
+  }
+}
 
-    .sap1_1 {
-      width: 320px;
-      height: 180px;
+.four_section {
+  div.block{
+    &>img {
+      width: 100%;
+      margin-top: 20px;
     }
   }
 }
 
-.fourth_section {
-  .sap1_2 {
-    width: 100%;
-  }
-}
+.five_section {
 
-.righ_align {
-  text-align: right;
 }
 
 .types_list {
