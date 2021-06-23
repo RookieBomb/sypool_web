@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: zhuxiaobing
+ * @Date: 2021-06-23 10:39:21
+ * @LastEditors: zhuxiaobing
+ * @LastEditTime: 2021-06-23 15:23:34
+ */
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -60,6 +67,7 @@ export default {
       plugins: [
         require('postcss-pxtorem')({
           rootValue: 190,
+          minPixelValue: 90,
           propList: ['*']
         }),
         require('autoprefixer')({
