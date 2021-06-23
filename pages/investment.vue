@@ -34,5 +34,4 @@ export default {
   margin-top: 50px;
   padding: 15px;
 }
-
 </style>
