@@ -149,6 +149,8 @@ export default {
     .right_box {
       font-size: 14px;
       line-height: 1.5;
+      word-wrap: break-word;
+      word-break: normal;
     }
   }
 

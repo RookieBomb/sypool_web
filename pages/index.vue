@@ -216,9 +216,9 @@
         <img src="../assets/img/line.png" class="line_img" alt="">
       </div>
       <div class="compans_list">
-        <img src="../assets/img/binance_smart_chain.png" class="wow animate__bounceIn" alt="">
+        <img src="../assets/img/binance_smart_chain.png" class="grays wow animate__bounceIn" alt="">
         <img src="../assets/img/solana-1.png" class="wow animate__bounceIn" alt="">
-        <img src="../assets/img/ethereum.png" class="wow animate__bounceIn" alt="">
+        <img src="../assets/img/ethereum.png" class="grays wow animate__bounceIn" alt="">
       </div>
     </section>
 
@@ -465,6 +465,11 @@ export default {
 
 .preview_img {
   width: 480px;
+}
+
+.grays {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 </style>
